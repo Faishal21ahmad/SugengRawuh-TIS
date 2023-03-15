@@ -7,19 +7,20 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## SUGENG RAWUH
+## SUGENG RAWUH TIS
 
 php requirement.
 - php 8.0.
+- nodejs > 16
+- npx > 6
+- composer > 2.0
+
 
 Run in local type the code in the terminal
 - composer install
+- npm i vite
 - php artisan storage:link
-- php artisan serve.
-- npm run dev.
+- php artisan serve
+- npm run dev
 - paste in browser http://127.0.0.1:8000
 
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
