@@ -63,7 +63,7 @@ class CartController extends Controller
         $pesan = $request->validate([
             'adminrm_id' => '',
             'meja_id' => '',
-            'jenispembayaran_id' => '',
+            'jenispembayaran_id' => 'required',
             'codepesan' => '',
             'namapemesan' => 'required',
             'totalharga' => '',
@@ -79,9 +79,9 @@ class CartController extends Controller
                 'subharga' => $item['harga'] * $item['jumlah']
             ];
             $detailpesan['codepesan'] = $codeps;
+            // @dd($detailpesan);
             DetailPesanan::create($detailpesan);
         };
-
         return redirect('/success');
     }
 

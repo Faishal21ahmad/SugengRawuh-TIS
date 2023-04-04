@@ -1,12 +1,8 @@
 <?php
-
 namespace App\Http\Controllers;
-
-
 use App\Models\Pembayaran;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
-
 class PembayaranController extends Controller
 {
     public function index()
@@ -29,9 +25,7 @@ class PembayaranController extends Controller
             $validatedData['qrpembayaran'] = $request->file('qrpembayaran')->store('pay-img');
         }
         $validatedData['adminrm_id'] = auth()->user()->id;
-
         Pembayaran::create($validatedData);
-
         return redirect('/pembayaran');
     }
 
@@ -62,7 +56,6 @@ class PembayaranController extends Controller
         }
 
         Pembayaran::where('id', $pembayaran->id)->update($validatedData);
-
         return redirect('/pembayaran')->with('success', 'pembayaran Has ben Update!!');
     }
     public function destroy(Pembayaran $pembayaran)
@@ -70,9 +63,7 @@ class PembayaranController extends Controller
         if ($pembayaran->qrpembayaran) {
             Storage::delete($pembayaran->qrpembayaran);
         }
-
         Pembayaran::destroy($pembayaran->id);
-
         return redirect('/pembayaran')->with('success', 'Delete pembayaran Success');
     }
 }

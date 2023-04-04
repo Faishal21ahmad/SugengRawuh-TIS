@@ -95,11 +95,13 @@
                     </div>
                     <div class="text-gray-500 dark:text-white flex my-auto ml-auto pr-5">
                         <a href="/editminqty/{{ $id }}" class="">
-                            <i class="fi fi-sr-cross-circle text-2xl"></i>
+                           
+                            <i class="fi fi-sr-square-minus text-2xl"></i>
                         </a>
                         <p class="text-lg mx-5">{{ $item['jumlah']; }}</p>
                         <a href="/editplusqty/{{ $id }}">
-                            <i class="fi fi-sr-add text-2xl"></i>
+                           
+                            <i class="fi fi-sr-square-plus text-2xl"></i>
                         </a>
                     </div>
                 </div>

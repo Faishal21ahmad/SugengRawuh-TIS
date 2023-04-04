@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 28, 2023 at 01:33 AM
+-- Generation Time: Apr 04, 2023 at 08:58 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -45,7 +45,7 @@ CREATE TABLE `adminrms` (
 
 INSERT INTO `adminrms` (`id`, `namarm`, `owner`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
 (1, 'Rawuh Warmindo', 'Faishal', 'rawuh@gmail.com', '2023-01-27 17:26:45', '$2y$10$T.dMOsbnFZcf/QgDz9JjOO7vzLQD6ddP5TbtCGplqnD2PM8v07nES', 'jBlzsUH6Fo', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
-(2, 'Rawuh Mewah', 'Ahmad', 'ahmad@gmail.com', '2023-01-27 17:26:46', '$2y$10$PXuBnNxsHii4JhuY5Ls5LuS601HsXBcyX76AHYx42E7r/YIETtGru', '1VmvmXcsn6', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(2, 'Rawuh Mewah', 'Ahmad', 'ahmad@gmail.com', '2023-01-27 17:26:46', '$2y$10$PXuBnNxsHii4JhuY5Ls5LuS601HsXBcyX76AHYx42E7r/YIETtGru', '910kXomMEDCqUSexX1yQkfU9iPo9Mq6azLvl0h6VLzWVBx77HTE8zlzygtil', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
 (3, 'Burjo Mewah', 'Pak burjo', 'burjo@gmail.com', '2023-01-27 17:26:46', '$2y$10$uaAcrpqUYo.3i/APp0g2qOFb/CDAp8unJl2Y818gIcrEaiAmOa8Nq', 'ADHaUsmppK', '2023-01-27 17:26:46', '2023-01-27 17:26:46');
 
 -- --------------------------------------------------------
@@ -85,7 +85,23 @@ INSERT INTO `detail_pesanans` (`id`, `pesanan_id`, `menu_id`, `codepesan`, `juml
 (13, 6, 5, 'dfgdfg', '1', '18000', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
 (14, 6, 6, 'dfgdfg', '1', '10000', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
 (15, 6, 7, 'dfgdfg', '1', '15000', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
-(16, 6, 8, 'dfgdfg', '1', '4000', '2023-01-27 17:26:46', '2023-01-27 17:26:46');
+(16, 6, 8, 'dfgdfg', '1', '4000', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(17, NULL, 5, 'DZajNnzU3Z', '1', '18000', '2023-03-27 13:34:01', '2023-03-27 13:34:01'),
+(18, NULL, 7, 'DZajNnzU3Z', '1', '15000', '2023-03-27 13:34:01', '2023-03-27 13:34:01'),
+(19, NULL, 6, 'DZajNnzU3Z', '1', '10000', '2023-03-27 13:34:01', '2023-03-27 13:34:01'),
+(20, NULL, 5, 'QR9SiskdbB', '1', '18000', '2023-03-27 13:35:42', '2023-03-27 13:35:42'),
+(21, NULL, 7, 'QR9SiskdbB', '1', '15000', '2023-03-27 13:35:42', '2023-03-27 13:35:42'),
+(22, NULL, 5, 'y736eM7DhJ', '1', '18000', '2023-03-28 07:06:08', '2023-03-28 07:06:08'),
+(23, NULL, 6, 'y736eM7DhJ', '1', '10000', '2023-03-28 07:06:08', '2023-03-28 07:06:08'),
+(24, NULL, 7, 'yIX3zWVYK6', '1', '15000', '2023-03-28 07:21:59', '2023-03-28 07:21:59'),
+(25, NULL, 6, 'yIX3zWVYK6', '1', '10000', '2023-03-28 07:21:59', '2023-03-28 07:21:59'),
+(26, NULL, 6, 'ZoDR1rBr4P', '1', '10000', '2023-03-30 07:31:18', '2023-03-30 07:31:18'),
+(27, NULL, 7, 'ZoDR1rBr4P', '3', '45000', '2023-03-30 07:31:18', '2023-03-30 07:31:18'),
+(28, NULL, 6, 'fsT9SykWln', '1', '10000', '2023-04-04 07:08:25', '2023-04-04 07:08:25'),
+(29, NULL, 7, 'fsT9SykWln', '1', '15000', '2023-04-04 07:08:25', '2023-04-04 07:08:25'),
+(30, NULL, 5, 'S2CApkvX2Q', '1', '18000', '2023-04-04 07:24:43', '2023-04-04 07:24:43'),
+(31, NULL, 6, 'S2CApkvX2Q', '1', '10000', '2023-04-04 07:24:43', '2023-04-04 07:24:43'),
+(32, NULL, 7, 'S2CApkvX2Q', '1', '15000', '2023-04-04 07:24:43', '2023-04-04 07:24:43');
 
 -- --------------------------------------------------------
 
@@ -197,7 +213,7 @@ INSERT INTO `menu_r_m_s` (`id`, `adminrm_id`, `kategori_id`, `menu`, `desmenu`, 
 (2, 1, 1, 'Mie Ayam', 'Mie ayam, Dengan rasa yang kuat dan pas, terenak sejagat Wonogiri', '10000', 'menu-img/mie ayam1.jpg', 'tersedia', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
 (3, 1, 1, 'Bakso', 'Bakso, Dengan rasa yang kuat dan pas, terenak sejagat Wonogiri', '15000', 'menu-img/bakso.jpeg', 'taktersedia', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
 (4, 1, 2, 'Teh Kuli', 'Teh pilihanx dengan porsi kuli', '4000', 'menu-img/teh kuli.jpg', 'taktersedia', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
-(5, 2, 4, 'Sate', 'Sate dengan daging pilihan dan posrsi pas', '18000', 'menu-img/sate.jpg', 'tersedia', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
+(5, 2, 4, 'Sate', 'Sate dengan daging pilihan dan posrsi pas', '18000', 'menu-img/sate.jpg', 'tersedia', NULL, '2023-01-27 17:26:46', '2023-03-30 06:43:32'),
 (6, 2, 4, 'Soto Ayam', 'Soto ter lezzat', '10000', 'menu-img/sotoayam.jpg', 'tersedia', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
 (7, 2, 4, 'Sop Iga', 'Sop Iga dengan gaging tulang yang pas', '15000', 'menu-img/sop iga.jpg', 'tersedia', NULL, '2023-01-27 17:26:46', '2023-01-27 17:29:45'),
 (8, 2, 5, 'Wedang Jahe', 'Wedang Jahe dengan jahe dataran tinggi terbaik', '4000', 'menu-img/wedang jahe.jpg', 'taktersedia', NULL, '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
@@ -321,7 +337,12 @@ INSERT INTO `pesanans` (`id`, `adminrm_id`, `meja_id`, `jenispembayaran_id`, `co
 (3, 2, 11, 1, '4324', 'Nisa', '47000', 'diterima', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
 (4, 2, 12, 1, '432ter', 'Fikri', '19000', 'diterima', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
 (5, 2, 13, 1, 'qwewer', 'Fathuni', '19000', 'diterima', '2023-01-27 17:26:46', '2023-01-27 17:26:46'),
-(6, 2, 14, 1, 'dfgdfg', 'Jokos', '47000', 'diterima', '2023-01-27 17:26:46', '2023-01-27 17:26:46');
+(6, 2, 14, 1, 'dfgdfg', 'Jokos', '47000', 'diproses', '2023-01-27 17:26:46', '2023-04-04 07:03:48'),
+(7, 2, 2, 3, 'DZajNnzU3Z', 'aku', '43000', 'diterima', '2023-03-27 13:34:01', '2023-03-27 13:34:01'),
+(8, 2, 2, 3, 'QR9SiskdbB', 'aku', '33000', 'diterima', '2023-03-27 13:35:41', '2023-03-27 13:35:41'),
+(10, 2, 2, 3, 'yIX3zWVYK6', 'kavein', '25000', 'diproses', '2023-03-28 07:21:59', '2023-04-04 07:10:23'),
+(12, 2, 3, 3, 'fsT9SykWln', 'Niko', '25000', 'selesai', '2023-04-04 07:08:25', '2023-04-04 07:25:04'),
+(14, 2, 8, 3, 'S2CApkvX2Q', 'dipo', '43000', 'selesai', '2023-04-04 07:24:43', '2023-04-04 07:25:11');
 
 -- --------------------------------------------------------
 
@@ -428,7 +449,7 @@ ALTER TABLE `adminrms`
 -- AUTO_INCREMENT for table `detail_pesanans`
 --
 ALTER TABLE `detail_pesanans`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT for table `kategoris`
@@ -470,7 +491,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `pesanans`
 --
 ALTER TABLE `pesanans`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `users`
